@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DatabaseConnection AdditionalParams="context.CSB_SQLServer_AdditionalParams" ContextId="_4HwUoDXNEe6QV51SkJ4mBA" ContextMode="true" DatabaseType="Microsoft SQL Server" DatasourceName="" DbmsId="id_MSSQL" DriverClass="net.sourceforge.jtds.jdbc.Driver" FileFieldName="" NullChar="" Password="context.CSB_SQLServer_Password" Port="context.CSB_SQLServer_Port" ProductId="SQL_SERVER" SID="context.CSB_SQLServer_Database" SQLMode="false" ServerName="context.CSB_SQLServer_Server" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:jtds:sqlserver://192.168.1.104:1433/CSB;" UiSchema="context.CSB_SQLServer_Schema" Username="context.CSB_SQLServer_Login" contextName="Default" dataPackage="_4mcbwDXNEe6QV51SkJ4mBA" dbVersionString="JTDS" id="_-SiRUDXMEe6QV51SkJ4mBA" label="CSB_SQLServer" name="CSB_SQLServer" supplierDependency="_bKCudDaZEe6N_N17dUdcrg" xmi:id="_4bwOsDXNEe6QV51SkJ4mBA">
+    <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_4bwOsTXNEe6QV51SkJ4mBA"/>
+    <taggedValue tag="package filter" value="" xmi:id="_4cgcoDXNEe6QV51SkJ4mBA"/>
+    <taggedValue tag="Status" value="" xmi:id="_4csp4DXNEe6QV51SkJ4mBA"/>
+    <taggedValue tag="Version" value="0.1" xmi:id="_4csp4TXNEe6QV51SkJ4mBA"/>
+    <taggedValue tag="Purpose" value="" xmi:id="_4csp4jXNEe6QV51SkJ4mBA"/>
+    <taggedValue tag="Description" value="" xmi:id="_4csp4zXNEe6QV51SkJ4mBA"/>
+    <taggedValue tag="Author" value="" xmi:id="_4csp5DXNEe6QV51SkJ4mBA"/>
+    <taggedValue tag="otherParameter" xmi:id="_4csp5TXNEe6QV51SkJ4mBA"/>
+    <taggedValue tag="DB ProductName" value="Microsoft SQL Server" xmi:id="_4gu1UDXNEe6QV51SkJ4mBA"/>
+    <taggedValue tag="DB ProductVersion" value="15.00.4043" xmi:id="_4gu1UTXNEe6QV51SkJ4mBA"/>
+    <taggedValue tag="DB IdentifierQuoteString" value="&quot;" xmi:id="_4gu1UjXNEe6QV51SkJ4mBA"/>
+    <parameters key="CONN_PARA_KEY_USERNAME" value="context.CSB_SQLServer_Login" xmi:id="_4bwOsjXNEe6QV51SkJ4mBA"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_4bwOsDXNEe6QV51SkJ4mBA" name="CSB" xmi:id="_4mcbwDXNEe6QV51SkJ4mBA">
+    <ownedElement name="db_accessadmin" xmi:id="_4mcbwTXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="db_backupoperator" xmi:id="_4mcbwjXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="db_datareader" xmi:id="_4mcbwzXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="db_datawriter" xmi:id="_4mcbxDXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="db_ddladmin" xmi:id="_4mcbxTXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="db_denydatareader" xmi:id="_4mcbxjXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="db_denydatawriter" xmi:id="_4mcbxzXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="db_owner" xmi:id="_4mcbyDXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="db_securityadmin" xmi:id="_4mffEDXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="dbo" xmi:id="_4mffETXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema">
+      <ownedElement id="_iuNLwDdPEe6Cf6w15FrSLA" label="Intermediate_table" name="Intermediate_table" tableType="TABLE" xmi:id="_iuNLwTdPEe6Cf6w15FrSLA" xsi:type="relational:TdTable">
+        <feature label="Id" length="10" name="Id" sourceType="INT" talendType="id_Integer" xmi:id="_iuNLwjdPEe6Cf6w15FrSLA" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_iuNLwzdPEe6Cf6w15FrSLA"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_iuNLxDdPEe6Cf6w15FrSLA" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="4" name="INT" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_iuNLxTdPEe6Cf6w15FrSLA"/>
+        </feature>
+        <feature label="First_Name" length="255" name="First_Name" sourceType="VARCHAR" talendType="id_String" xmi:id="_iuNLxjdPEe6Cf6w15FrSLA" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_iuNLxzdPEe6Cf6w15FrSLA"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_iuNLyDdPEe6Cf6w15FrSLA" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_iuNLyTdPEe6Cf6w15FrSLA"/>
+        </feature>
+        <feature label="Last_Name" length="255" name="Last_Name" sourceType="VARCHAR" talendType="id_String" xmi:id="_iuNLyjdPEe6Cf6w15FrSLA" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_iuNLyzdPEe6Cf6w15FrSLA"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_iuNLzDdPEe6Cf6w15FrSLA" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_iuNLzTdPEe6Cf6w15FrSLA"/>
+        </feature>
+        <feature label="Phone_Number" length="255" name="Phone_Number" sourceType="VARCHAR" talendType="id_String" xmi:id="_iuNLzjdPEe6Cf6w15FrSLA" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_iuNLzzdPEe6Cf6w15FrSLA"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_iuNL0DdPEe6Cf6w15FrSLA" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_iuNL0TdPEe6Cf6w15FrSLA"/>
+        </feature>
+        <feature label="Email" length="255" name="Email" sourceType="VARCHAR" talendType="id_String" xmi:id="_iuNL0jdPEe6Cf6w15FrSLA" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_iuNL0zdPEe6Cf6w15FrSLA"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_iuNL1DdPEe6Cf6w15FrSLA" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_iuNL1TdPEe6Cf6w15FrSLA"/>
+        </feature>
+        <feature label="City" length="255" name="City" sourceType="VARCHAR" talendType="id_String" xmi:id="_iuNL1jdPEe6Cf6w15FrSLA" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_iuNL1zdPEe6Cf6w15FrSLA"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_iuNL2DdPEe6Cf6w15FrSLA" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_iuNL2TdPEe6Cf6w15FrSLA"/>
+        </feature>
+        <feature label="Country" length="255" name="Country" sourceType="VARCHAR" talendType="id_String" xmi:id="_iuNL2jdPEe6Cf6w15FrSLA" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_iuNL2zdPEe6Cf6w15FrSLA"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_iuNL3DdPEe6Cf6w15FrSLA" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_iuNL3TdPEe6Cf6w15FrSLA"/>
+        </feature>
+        <feature label="DT_Insert" length="100" name="DT_Insert" sourceType="VARCHAR" talendType="id_String" xmi:id="_yA_rjjdyEe6r5YBD3SqUQQ" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_yA_rjzdyEe6r5YBD3SqUQQ"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_yA_rkDdyEe6r5YBD3SqUQQ" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" xmi:id="_yA_rkTdyEe6r5YBD3SqUQQ"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+    <ownedElement name="guest" xmi:id="_4mffEjXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+    <ownedElement name="INFORMATION_SCHEMA" xmi:id="_4mffEzXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema">
+      <ownedElement id="_hpkgMDdPEe6Cf6w15FrSLA" label="CHECK_CONSTRAINTS" name="CHECK_CONSTRAINTS" tableType="VIEW" xmi:id="__2mEEDXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf_jdPEe6Cf6w15FrSLA" label="COLUMN_DOMAIN_USAGE" name="COLUMN_DOMAIN_USAGE" tableType="VIEW" xmi:id="__2mEETXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltITdPEe6Cf6w15FrSLA" label="COLUMN_PRIVILEGES" name="COLUMN_PRIVILEGES" tableType="VIEW" xmi:id="__2mEEjXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltuDdPEe6Cf6w15FrSLA" label="COLUMNS" name="COLUMNS" tableType="VIEW" xmi:id="__2mEEzXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgADdPEe6Cf6w15FrSLA" label="CONSTRAINT_COLUMN_USAGE" name="CONSTRAINT_COLUMN_USAGE" tableType="VIEW" xmi:id="__2mEFDXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfUDdPEe6Cf6w15FrSLA" label="CONSTRAINT_TABLE_USAGE" name="CONSTRAINT_TABLE_USAGE" tableType="VIEW" xmi:id="__2mEFTXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfzDdPEe6Cf6w15FrSLA" label="DOMAIN_CONSTRAINTS" name="DOMAIN_CONSTRAINTS" tableType="VIEW" xmi:id="__2mEFjXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfKTdPEe6Cf6w15FrSLA" label="DOMAINS" name="DOMAINS" tableType="VIEW" xmi:id="__2mEFzXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltazdPEe6Cf6w15FrSLA" label="KEY_COLUMN_USAGE" name="KEY_COLUMN_USAGE" tableType="VIEW" xmi:id="__2mEGDXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltvjdPEe6Cf6w15FrSLA" label="PARAMETERS" name="PARAMETERS" tableType="VIEW" xmi:id="__2mEGTXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltcjdPEe6Cf6w15FrSLA" label="REFERENTIAL_CONSTRAINTS" name="REFERENTIAL_CONSTRAINTS" tableType="VIEW" xmi:id="__2mEGjXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfgTdPEe6Cf6w15FrSLA" label="ROUTINE_COLUMNS" name="ROUTINE_COLUMNS" tableType="VIEW" xmi:id="__2mEGzXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfHzdPEe6Cf6w15FrSLA" label="ROUTINES" name="ROUTINES" tableType="VIEW" xmi:id="__2mEHDXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltmDdPEe6Cf6w15FrSLA" label="SCHEMATA" name="SCHEMATA" tableType="VIEW" xmi:id="__2mEHTXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfwDdPEe6Cf6w15FrSLA" label="SEQUENCES" name="SEQUENCES" tableType="VIEW" xmi:id="__2mEHjXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmeDdPEe6Cf6w15FrSLA" label="TABLE_CONSTRAINTS" name="TABLE_CONSTRAINTS" tableType="VIEW" xmi:id="__2mEHzXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfGTdPEe6Cf6w15FrSLA" label="TABLE_PRIVILEGES" name="TABLE_PRIVILEGES" tableType="VIEW" xmi:id="__2mEIDXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfnTdPEe6Cf6w15FrSLA" label="TABLES" name="TABLES" tableType="VIEW" xmi:id="__2mEITXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfkTdPEe6Cf6w15FrSLA" label="VIEW_COLUMN_USAGE" name="VIEW_COLUMN_USAGE" tableType="VIEW" xmi:id="__2mEIjXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke8jdPEe6Cf6w15FrSLA" label="VIEW_TABLE_USAGE" name="VIEW_TABLE_USAGE" tableType="VIEW" xmi:id="__2mEIzXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfxjdPEe6Cf6w15FrSLA" label="VIEWS" name="VIEWS" tableType="VIEW" xmi:id="__2mEJDXXEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+    </ownedElement>
+    <ownedElement name="sys" xmi:id="_4mffFDXNEe6QV51SkJ4mBA" xsi:type="orgomg.cwm.resource.relational:Schema">
+      <ownedElement id="_hpkf6DdPEe6Cf6w15FrSLA" label="all_columns" name="all_columns" tableType="VIEW" xmi:id="_ASYBIDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke_zdPEe6Cf6w15FrSLA" label="all_objects" name="all_objects" tableType="VIEW" xmi:id="_ASYBITXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltIzdPEe6Cf6w15FrSLA" label="all_parameters" name="all_parameters" tableType="VIEW" xmi:id="_ASYBIjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfxDdPEe6Cf6w15FrSLA" label="all_sql_modules" name="all_sql_modules" tableType="VIEW" xmi:id="_ASYBIzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltljdPEe6Cf6w15FrSLA" label="all_views" name="all_views" tableType="VIEW" xmi:id="_ASYBJDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgGjdPEe6Cf6w15FrSLA" label="allocation_units" name="allocation_units" tableType="VIEW" xmi:id="_ASYBJTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfETdPEe6Cf6w15FrSLA" label="assemblies" name="assemblies" tableType="VIEW" xmi:id="_ASYBJjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfXjdPEe6Cf6w15FrSLA" label="assembly_files" name="assembly_files" tableType="VIEW" xmi:id="_ASYBJzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf1TdPEe6Cf6w15FrSLA" label="assembly_modules" name="assembly_modules" tableType="VIEW" xmi:id="_ASYBKDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke-DdPEe6Cf6w15FrSLA" label="assembly_references" name="assembly_references" tableType="VIEW" xmi:id="_ASYBKTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfDjdPEe6Cf6w15FrSLA" label="assembly_types" name="assembly_types" tableType="VIEW" xmi:id="_ASYBKjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfaTdPEe6Cf6w15FrSLA" label="asymmetric_keys" name="asymmetric_keys" tableType="VIEW" xmi:id="_ASYBKzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltMTdPEe6Cf6w15FrSLA" label="availability_databases_cluster" name="availability_databases_cluster" tableType="VIEW" xmi:id="_ASYBLDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltXTdPEe6Cf6w15FrSLA" label="availability_group_listener_ip_addresses" name="availability_group_listener_ip_addresses" tableType="VIEW" xmi:id="_ASYBLTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfcjdPEe6Cf6w15FrSLA" label="availability_group_listeners" name="availability_group_listeners" tableType="VIEW" xmi:id="_ASYBLjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfpDdPEe6Cf6w15FrSLA" label="availability_groups" name="availability_groups" tableType="VIEW" xmi:id="_ASYBLzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfXDdPEe6Cf6w15FrSLA" label="availability_groups_cluster" name="availability_groups_cluster" tableType="VIEW" xmi:id="_ASYBMDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltIDdPEe6Cf6w15FrSLA" label="availability_read_only_routing_lists" name="availability_read_only_routing_lists" tableType="VIEW" xmi:id="_ASYBMTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfjjdPEe6Cf6w15FrSLA" label="availability_replicas" name="availability_replicas" tableType="VIEW" xmi:id="_ASYBMjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltpzdPEe6Cf6w15FrSLA" label="backup_devices" name="backup_devices" tableType="VIEW" xmi:id="_ASYBMzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgIjdPEe6Cf6w15FrSLA" label="certificates" name="certificates" tableType="VIEW" xmi:id="_ASYBNDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmijdPEe6Cf6w15FrSLA" label="change_tracking_databases" name="change_tracking_databases" tableType="VIEW" xmi:id="_ASYBNTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltbDdPEe6Cf6w15FrSLA" label="change_tracking_tables" name="change_tracking_tables" tableType="VIEW" xmi:id="_ASYBNjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfWzdPEe6Cf6w15FrSLA" label="check_constraints" name="check_constraints" tableType="VIEW" xmi:id="_ASYBNzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmfzdPEe6Cf6w15FrSLA" label="column_encryption_key_values" name="column_encryption_key_values" tableType="VIEW" xmi:id="_ASYBODXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltZjdPEe6Cf6w15FrSLA" label="column_encryption_keys" name="column_encryption_keys" tableType="VIEW" xmi:id="_ASYBOTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfPjdPEe6Cf6w15FrSLA" label="column_master_keys" name="column_master_keys" tableType="VIEW" xmi:id="_ASYBOjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgAjdPEe6Cf6w15FrSLA" label="column_store_dictionaries" name="column_store_dictionaries" tableType="VIEW" xmi:id="_ASYBOzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltgTdPEe6Cf6w15FrSLA" label="column_store_row_groups" name="column_store_row_groups" tableType="VIEW" xmi:id="_ASYBPDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltRTdPEe6Cf6w15FrSLA" label="column_store_segments" name="column_store_segments" tableType="VIEW" xmi:id="_ASYBPTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmdjdPEe6Cf6w15FrSLA" label="column_type_usages" name="column_type_usages" tableType="VIEW" xmi:id="_ASYBPjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf-TdPEe6Cf6w15FrSLA" label="column_xml_schema_collection_usages" name="column_xml_schema_collection_usages" tableType="VIEW" xmi:id="_ASYBPzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfzTdPEe6Cf6w15FrSLA" label="columns" name="columns" tableType="VIEW" xmi:id="_ASYBQDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgHjdPEe6Cf6w15FrSLA" label="computed_columns" name="computed_columns" tableType="VIEW" xmi:id="_ASYBQTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfPDdPEe6Cf6w15FrSLA" label="configurations" name="configurations" tableType="VIEW" xmi:id="_ASYBQjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfFDdPEe6Cf6w15FrSLA" label="conversation_endpoints" name="conversation_endpoints" tableType="VIEW" xmi:id="_ASYBQzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmgzdPEe6Cf6w15FrSLA" label="conversation_groups" name="conversation_groups" tableType="VIEW" xmi:id="_ASYBRDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hplttjdPEe6Cf6w15FrSLA" label="conversation_priorities" name="conversation_priorities" tableType="VIEW" xmi:id="_ASYBRTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfuTdPEe6Cf6w15FrSLA" label="credentials" name="credentials" tableType="VIEW" xmi:id="_ASYBRjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfGjdPEe6Cf6w15FrSLA" label="crypt_properties" name="crypt_properties" tableType="VIEW" xmi:id="_ASYBRzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfRDdPEe6Cf6w15FrSLA" label="cryptographic_providers" name="cryptographic_providers" tableType="VIEW" xmi:id="_ASYBSDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfSjdPEe6Cf6w15FrSLA" label="data_spaces" name="data_spaces" tableType="VIEW" xmi:id="_ASYBSTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltSDdPEe6Cf6w15FrSLA" label="database_audit_specification_details" name="database_audit_specification_details" tableType="VIEW" xmi:id="_ASYBSjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgGDdPEe6Cf6w15FrSLA" label="database_audit_specifications" name="database_audit_specifications" tableType="VIEW" xmi:id="_ASYBSzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltZzdPEe6Cf6w15FrSLA" label="database_automatic_tuning_mode" name="database_automatic_tuning_mode" tableType="VIEW" xmi:id="_ASYBTDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltJzdPEe6Cf6w15FrSLA" label="database_automatic_tuning_options" name="database_automatic_tuning_options" tableType="VIEW" xmi:id="_ASYBTTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmeTdPEe6Cf6w15FrSLA" label="database_credentials" name="database_credentials" tableType="VIEW" xmi:id="_ASYBTjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hplthjdPEe6Cf6w15FrSLA" label="database_files" name="database_files" tableType="VIEW" xmi:id="_ASYBTzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf9DdPEe6Cf6w15FrSLA" label="database_filestream_options" name="database_filestream_options" tableType="VIEW" xmi:id="_ASYBUDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfQTdPEe6Cf6w15FrSLA" label="database_mirroring" name="database_mirroring" tableType="VIEW" xmi:id="_ASYBUTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfnzdPEe6Cf6w15FrSLA" label="database_mirroring_endpoints" name="database_mirroring_endpoints" tableType="VIEW" xmi:id="_ASYBUjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgETdPEe6Cf6w15FrSLA" label="database_mirroring_witnesses" name="database_mirroring_witnesses" tableType="VIEW" xmi:id="_ASYBUzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfwTdPEe6Cf6w15FrSLA" label="database_permissions" name="database_permissions" tableType="VIEW" xmi:id="_ASYBVDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltHzdPEe6Cf6w15FrSLA" label="database_principals" name="database_principals" tableType="VIEW" xmi:id="_ASYBVTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfpTdPEe6Cf6w15FrSLA" label="database_query_store_options" name="database_query_store_options" tableType="VIEW" xmi:id="_ASYBVjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltEjdPEe6Cf6w15FrSLA" label="database_recovery_status" name="database_recovery_status" tableType="VIEW" xmi:id="_ASYBVzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkflzdPEe6Cf6w15FrSLA" label="database_role_members" name="database_role_members" tableType="VIEW" xmi:id="_ASYBWDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltEzdPEe6Cf6w15FrSLA" label="database_scoped_configurations" name="database_scoped_configurations" tableType="VIEW" xmi:id="_ASYBWTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfTjdPEe6Cf6w15FrSLA" label="database_scoped_credentials" name="database_scoped_credentials" tableType="VIEW" xmi:id="_ASYBWjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfPzdPEe6Cf6w15FrSLA" label="databases" name="databases" tableType="VIEW" xmi:id="_ASYBWzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgJTdPEe6Cf6w15FrSLA" label="default_constraints" name="default_constraints" tableType="VIEW" xmi:id="_ASYBXDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfnjdPEe6Cf6w15FrSLA" label="destination_data_spaces" name="destination_data_spaces" tableType="VIEW" xmi:id="_ASYBXTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltrjdPEe6Cf6w15FrSLA" label="dm_audit_actions" name="dm_audit_actions" tableType="VIEW" xmi:id="_ASYBXjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgCTdPEe6Cf6w15FrSLA" label="dm_audit_class_type_map" name="dm_audit_class_type_map" tableType="VIEW" xmi:id="_ASYBXzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltmjdPEe6Cf6w15FrSLA" label="dm_broker_activated_tasks" name="dm_broker_activated_tasks" tableType="VIEW" xmi:id="_ASYBYDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfvTdPEe6Cf6w15FrSLA" label="dm_broker_connections" name="dm_broker_connections" tableType="VIEW" xmi:id="_ASYBYTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgFjdPEe6Cf6w15FrSLA" label="dm_broker_forwarded_messages" name="dm_broker_forwarded_messages" tableType="VIEW" xmi:id="_ASYBYjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfPTdPEe6Cf6w15FrSLA" label="dm_broker_queue_monitors" name="dm_broker_queue_monitors" tableType="VIEW" xmi:id="_ASYBYzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltsDdPEe6Cf6w15FrSLA" label="dm_cache_hit_stats" name="dm_cache_hit_stats" tableType="VIEW" xmi:id="_ASYBZDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfHjdPEe6Cf6w15FrSLA" label="dm_cache_size" name="dm_cache_size" tableType="VIEW" xmi:id="_ASYBZTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfEzdPEe6Cf6w15FrSLA" label="dm_cache_stats" name="dm_cache_stats" tableType="VIEW" xmi:id="_ASYBZjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmdzdPEe6Cf6w15FrSLA" label="dm_cdc_errors" name="dm_cdc_errors" tableType="VIEW" xmi:id="_ASYBZzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltuTdPEe6Cf6w15FrSLA" label="dm_cdc_log_scan_sessions" name="dm_cdc_log_scan_sessions" tableType="VIEW" xmi:id="_ASYBaDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke_DdPEe6Cf6w15FrSLA" label="dm_clr_appdomains" name="dm_clr_appdomains" tableType="VIEW" xmi:id="_ASYBaTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltRDdPEe6Cf6w15FrSLA" label="dm_clr_loaded_assemblies" name="dm_clr_loaded_assemblies" tableType="VIEW" xmi:id="_ASYBajXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltSTdPEe6Cf6w15FrSLA" label="dm_clr_properties" name="dm_clr_properties" tableType="VIEW" xmi:id="_ASYBazXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltWjdPEe6Cf6w15FrSLA" label="dm_clr_tasks" name="dm_clr_tasks" tableType="VIEW" xmi:id="_ASYBbDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfxTdPEe6Cf6w15FrSLA" label="dm_cluster_endpoints" name="dm_cluster_endpoints" tableType="VIEW" xmi:id="_ASYBbTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltNDdPEe6Cf6w15FrSLA" label="dm_column_encryption_enclave" name="dm_column_encryption_enclave" tableType="VIEW" xmi:id="_ASYBbjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltszdPEe6Cf6w15FrSLA" label="dm_column_encryption_enclave_operation_stats" name="dm_column_encryption_enclave_operation_stats" tableType="VIEW" xmi:id="_ASYBbzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltKDdPEe6Cf6w15FrSLA" label="dm_column_store_object_pool" name="dm_column_store_object_pool" tableType="VIEW" xmi:id="_ASYBcDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf2jdPEe6Cf6w15FrSLA" label="dm_cryptographic_provider_properties" name="dm_cryptographic_provider_properties" tableType="VIEW" xmi:id="_ASYBcTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfqTdPEe6Cf6w15FrSLA" label="dm_database_encryption_keys" name="dm_database_encryption_keys" tableType="VIEW" xmi:id="_ASYBcjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfJTdPEe6Cf6w15FrSLA" label="dm_db_column_store_row_group_operational_stats" name="dm_db_column_store_row_group_operational_stats" tableType="VIEW" xmi:id="_ASYBczXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltFjdPEe6Cf6w15FrSLA" label="dm_db_column_store_row_group_physical_stats" name="dm_db_column_store_row_group_physical_stats" tableType="VIEW" xmi:id="_ASYBdDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltYzdPEe6Cf6w15FrSLA" label="dm_db_data_pool_nodes" name="dm_db_data_pool_nodes" tableType="VIEW" xmi:id="_ASYBdTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfJjdPEe6Cf6w15FrSLA" label="dm_db_data_pools" name="dm_db_data_pools" tableType="VIEW" xmi:id="_ASYBdjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgDTdPEe6Cf6w15FrSLA" label="dm_db_external_language_stats" name="dm_db_external_language_stats" tableType="VIEW" xmi:id="_ASYBdzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltdDdPEe6Cf6w15FrSLA" label="dm_db_external_script_execution_stats" name="dm_db_external_script_execution_stats" tableType="VIEW" xmi:id="_ASYBeDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgATdPEe6Cf6w15FrSLA" label="dm_db_file_space_usage" name="dm_db_file_space_usage" tableType="VIEW" xmi:id="_ASYBeTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmgDdPEe6Cf6w15FrSLA" label="dm_db_fts_index_physical_stats" name="dm_db_fts_index_physical_stats" tableType="VIEW" xmi:id="_ASYBejXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf2DdPEe6Cf6w15FrSLA" label="dm_db_index_usage_stats" name="dm_db_index_usage_stats" tableType="VIEW" xmi:id="_ASYBezXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfrTdPEe6Cf6w15FrSLA" label="dm_db_log_space_usage" name="dm_db_log_space_usage" tableType="VIEW" xmi:id="_ASYBfDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltGTdPEe6Cf6w15FrSLA" label="dm_db_mirroring_auto_page_repair" name="dm_db_mirroring_auto_page_repair" tableType="VIEW" xmi:id="_ASYBfTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfljdPEe6Cf6w15FrSLA" label="dm_db_mirroring_connections" name="dm_db_mirroring_connections" tableType="VIEW" xmi:id="_ASYBfjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfMTdPEe6Cf6w15FrSLA" label="dm_db_mirroring_past_actions" name="dm_db_mirroring_past_actions" tableType="VIEW" xmi:id="_ASYBfzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltQjdPEe6Cf6w15FrSLA" label="dm_db_missing_index_details" name="dm_db_missing_index_details" tableType="VIEW" xmi:id="_ASYBgDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltozdPEe6Cf6w15FrSLA" label="dm_db_missing_index_group_stats" name="dm_db_missing_index_group_stats" tableType="VIEW" xmi:id="_ASYBgTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfJDdPEe6Cf6w15FrSLA" label="dm_db_missing_index_group_stats_query" name="dm_db_missing_index_group_stats_query" tableType="VIEW" xmi:id="_ASYBgjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltETdPEe6Cf6w15FrSLA" label="dm_db_missing_index_groups" name="dm_db_missing_index_groups" tableType="VIEW" xmi:id="_ASYBgzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf0jdPEe6Cf6w15FrSLA" label="dm_db_partition_stats" name="dm_db_partition_stats" tableType="VIEW" xmi:id="_ASYBhDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltlDdPEe6Cf6w15FrSLA" label="dm_db_persisted_sku_features" name="dm_db_persisted_sku_features" tableType="VIEW" xmi:id="_ASYBhTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgNDdPEe6Cf6w15FrSLA" label="dm_db_rda_migration_status" name="dm_db_rda_migration_status" tableType="VIEW" xmi:id="_ASYBhjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfiTdPEe6Cf6w15FrSLA" label="dm_db_rda_schema_update_status" name="dm_db_rda_schema_update_status" tableType="VIEW" xmi:id="_ASYBhzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmjTdPEe6Cf6w15FrSLA" label="dm_db_script_level" name="dm_db_script_level" tableType="VIEW" xmi:id="_ASYBiDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltYDdPEe6Cf6w15FrSLA" label="dm_db_session_space_usage" name="dm_db_session_space_usage" tableType="VIEW" xmi:id="_ASYBiTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfdDdPEe6Cf6w15FrSLA" label="dm_db_storage_pool_nodes" name="dm_db_storage_pool_nodes" tableType="VIEW" xmi:id="_ASYBijXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfJzdPEe6Cf6w15FrSLA" label="dm_db_storage_pools" name="dm_db_storage_pools" tableType="VIEW" xmi:id="_ASYBizXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltnjdPEe6Cf6w15FrSLA" label="dm_db_task_space_usage" name="dm_db_task_space_usage" tableType="VIEW" xmi:id="_ASYBjDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf3DdPEe6Cf6w15FrSLA" label="dm_db_tuning_recommendations" name="dm_db_tuning_recommendations" tableType="VIEW" xmi:id="_ASYBjTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltdTdPEe6Cf6w15FrSLA" label="dm_db_uncontained_entities" name="dm_db_uncontained_entities" tableType="VIEW" xmi:id="_ASYBjjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf5DdPEe6Cf6w15FrSLA" label="dm_db_xtp_checkpoint_files" name="dm_db_xtp_checkpoint_files" tableType="VIEW" xmi:id="_ASYBjzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgKzdPEe6Cf6w15FrSLA" label="dm_db_xtp_checkpoint_internals" name="dm_db_xtp_checkpoint_internals" tableType="VIEW" xmi:id="_ASYBkDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltPzdPEe6Cf6w15FrSLA" label="dm_db_xtp_checkpoint_stats" name="dm_db_xtp_checkpoint_stats" tableType="VIEW" xmi:id="_ASYBkTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltTjdPEe6Cf6w15FrSLA" label="dm_db_xtp_gc_cycle_stats" name="dm_db_xtp_gc_cycle_stats" tableType="VIEW" xmi:id="_ASYBkjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfGDdPEe6Cf6w15FrSLA" label="dm_db_xtp_hash_index_stats" name="dm_db_xtp_hash_index_stats" tableType="VIEW" xmi:id="_ASYBkzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltTzdPEe6Cf6w15FrSLA" label="dm_db_xtp_index_stats" name="dm_db_xtp_index_stats" tableType="VIEW" xmi:id="_ASYBlDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmhDdPEe6Cf6w15FrSLA" label="dm_db_xtp_memory_consumers" name="dm_db_xtp_memory_consumers" tableType="VIEW" xmi:id="_ASYBlTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltdzdPEe6Cf6w15FrSLA" label="dm_db_xtp_nonclustered_index_stats" name="dm_db_xtp_nonclustered_index_stats" tableType="VIEW" xmi:id="_ASYBljXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmdDdPEe6Cf6w15FrSLA" label="dm_db_xtp_object_stats" name="dm_db_xtp_object_stats" tableType="VIEW" xmi:id="_ASYBlzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfejdPEe6Cf6w15FrSLA" label="dm_db_xtp_table_memory_stats" name="dm_db_xtp_table_memory_stats" tableType="VIEW" xmi:id="_ASYBmDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf5zdPEe6Cf6w15FrSLA" label="dm_db_xtp_transactions" name="dm_db_xtp_transactions" tableType="VIEW" xmi:id="_ASYBmTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltnDdPEe6Cf6w15FrSLA" label="dm_distributed_exchange_stats" name="dm_distributed_exchange_stats" tableType="VIEW" xmi:id="_ASYBmjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfODdPEe6Cf6w15FrSLA" label="dm_exec_background_job_queue" name="dm_exec_background_job_queue" tableType="VIEW" xmi:id="_ASYBmzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf9TdPEe6Cf6w15FrSLA" label="dm_exec_background_job_queue_stats" name="dm_exec_background_job_queue_stats" tableType="VIEW" xmi:id="_ASYBnDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfWjdPEe6Cf6w15FrSLA" label="dm_exec_cached_plans" name="dm_exec_cached_plans" tableType="VIEW" xmi:id="_ASYBnTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf5TdPEe6Cf6w15FrSLA" label="dm_exec_compute_node_errors" name="dm_exec_compute_node_errors" tableType="VIEW" xmi:id="_ASYBnjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltJDdPEe6Cf6w15FrSLA" label="dm_exec_compute_node_status" name="dm_exec_compute_node_status" tableType="VIEW" xmi:id="_ASYBnzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf8TdPEe6Cf6w15FrSLA" label="dm_exec_compute_nodes" name="dm_exec_compute_nodes" tableType="VIEW" xmi:id="_ASYBoDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf2zdPEe6Cf6w15FrSLA" label="dm_exec_compute_pools" name="dm_exec_compute_pools" tableType="VIEW" xmi:id="_ASYBoTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltXDdPEe6Cf6w15FrSLA" label="dm_exec_connections" name="dm_exec_connections" tableType="VIEW" xmi:id="_ASYBojXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfqzdPEe6Cf6w15FrSLA" label="dm_exec_distributed_request_steps" name="dm_exec_distributed_request_steps" tableType="VIEW" xmi:id="_ASYBozXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfHTdPEe6Cf6w15FrSLA" label="dm_exec_distributed_requests" name="dm_exec_distributed_requests" tableType="VIEW" xmi:id="_ASYBpDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfoTdPEe6Cf6w15FrSLA" label="dm_exec_distributed_sql_requests" name="dm_exec_distributed_sql_requests" tableType="VIEW" xmi:id="_ASYBpTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltjjdPEe6Cf6w15FrSLA" label="dm_exec_dms_services" name="dm_exec_dms_services" tableType="VIEW" xmi:id="_ASYBpjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltYjdPEe6Cf6w15FrSLA" label="dm_exec_dms_workers" name="dm_exec_dms_workers" tableType="VIEW" xmi:id="_ASYBpzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltIjdPEe6Cf6w15FrSLA" label="dm_exec_external_operations" name="dm_exec_external_operations" tableType="VIEW" xmi:id="_ASYBqDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltujdPEe6Cf6w15FrSLA" label="dm_exec_external_work" name="dm_exec_external_work" tableType="VIEW" xmi:id="_ASYBqTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltXjdPEe6Cf6w15FrSLA" label="dm_exec_function_stats" name="dm_exec_function_stats" tableType="VIEW" xmi:id="_ASYBqjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmiTdPEe6Cf6w15FrSLA" label="dm_exec_procedure_stats" name="dm_exec_procedure_stats" tableType="VIEW" xmi:id="_ASYBqzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf-jdPEe6Cf6w15FrSLA" label="dm_exec_query_memory_grants" name="dm_exec_query_memory_grants" tableType="VIEW" xmi:id="_ASYBrDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfRzdPEe6Cf6w15FrSLA" label="dm_exec_query_optimizer_info" name="dm_exec_query_optimizer_info" tableType="VIEW" xmi:id="_ASYBrTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfbDdPEe6Cf6w15FrSLA" label="dm_exec_query_optimizer_memory_gateways" name="dm_exec_query_optimizer_memory_gateways" tableType="VIEW" xmi:id="_ASYBrjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfCDdPEe6Cf6w15FrSLA" label="dm_exec_query_parallel_workers" name="dm_exec_query_parallel_workers" tableType="VIEW" xmi:id="_ASYBrzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltUTdPEe6Cf6w15FrSLA" label="dm_exec_query_profiles" name="dm_exec_query_profiles" tableType="VIEW" xmi:id="_ASYBsDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltMzdPEe6Cf6w15FrSLA" label="dm_exec_query_resource_semaphores" name="dm_exec_query_resource_semaphores" tableType="VIEW" xmi:id="_ASYBsTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltwDdPEe6Cf6w15FrSLA" label="dm_exec_query_stats" name="dm_exec_query_stats" tableType="VIEW" xmi:id="_ASYBsjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfDTdPEe6Cf6w15FrSLA" label="dm_exec_query_transformation_stats" name="dm_exec_query_transformation_stats" tableType="VIEW" xmi:id="_ASYBszXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmcTdPEe6Cf6w15FrSLA" label="dm_exec_requests" name="dm_exec_requests" tableType="VIEW" xmi:id="_ASYBtDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfNzdPEe6Cf6w15FrSLA" label="dm_exec_session_wait_stats" name="dm_exec_session_wait_stats" tableType="VIEW" xmi:id="_ASYBtTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfcDdPEe6Cf6w15FrSLA" label="dm_exec_sessions" name="dm_exec_sessions" tableType="VIEW" xmi:id="_ASYBtjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf_zdPEe6Cf6w15FrSLA" label="dm_exec_trigger_stats" name="dm_exec_trigger_stats" tableType="VIEW" xmi:id="_ASYBtzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltcDdPEe6Cf6w15FrSLA" label="dm_exec_valid_use_hints" name="dm_exec_valid_use_hints" tableType="VIEW" xmi:id="_ASYBuDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmcjdPEe6Cf6w15FrSLA" label="dm_external_authentication" name="dm_external_authentication" tableType="VIEW" xmi:id="_ASYBuTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke9zdPEe6Cf6w15FrSLA" label="dm_external_script_execution_stats" name="dm_external_script_execution_stats" tableType="VIEW" xmi:id="_ASYBujXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf5jdPEe6Cf6w15FrSLA" label="dm_external_script_requests" name="dm_external_script_requests" tableType="VIEW" xmi:id="_ASYBuzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltSjdPEe6Cf6w15FrSLA" label="dm_external_script_resource_usage_stats" name="dm_external_script_resource_usage_stats" tableType="VIEW" xmi:id="_ASYBvDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfIDdPEe6Cf6w15FrSLA" label="dm_filestream_file_io_handles" name="dm_filestream_file_io_handles" tableType="VIEW" xmi:id="_ASYBvTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfKzdPEe6Cf6w15FrSLA" label="dm_filestream_file_io_requests" name="dm_filestream_file_io_requests" tableType="VIEW" xmi:id="_ASYBvjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke9TdPEe6Cf6w15FrSLA" label="dm_filestream_non_transacted_handles" name="dm_filestream_non_transacted_handles" tableType="VIEW" xmi:id="_ASYBvzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf7DdPEe6Cf6w15FrSLA" label="dm_fts_active_catalogs" name="dm_fts_active_catalogs" tableType="VIEW" xmi:id="_ASYBwDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfpjdPEe6Cf6w15FrSLA" label="dm_fts_fdhosts" name="dm_fts_fdhosts" tableType="VIEW" xmi:id="_ASYBwTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkflTdPEe6Cf6w15FrSLA" label="dm_fts_index_population" name="dm_fts_index_population" tableType="VIEW" xmi:id="_ASYBwjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgDzdPEe6Cf6w15FrSLA" label="dm_fts_memory_buffers" name="dm_fts_memory_buffers" tableType="VIEW" xmi:id="_ASYBwzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfqjdPEe6Cf6w15FrSLA" label="dm_fts_memory_pools" name="dm_fts_memory_pools" tableType="VIEW" xmi:id="_ASYBxDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfUzdPEe6Cf6w15FrSLA" label="dm_fts_outstanding_batches" name="dm_fts_outstanding_batches" tableType="VIEW" xmi:id="_ASYBxTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke-jdPEe6Cf6w15FrSLA" label="dm_fts_population_ranges" name="dm_fts_population_ranges" tableType="VIEW" xmi:id="_ASYBxjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgHDdPEe6Cf6w15FrSLA" label="dm_fts_semantic_similarity_population" name="dm_fts_semantic_similarity_population" tableType="VIEW" xmi:id="_ASYBxzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkftDdPEe6Cf6w15FrSLA" label="dm_hadr_ag_threads" name="dm_hadr_ag_threads" tableType="VIEW" xmi:id="_ASYByDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltfzdPEe6Cf6w15FrSLA" label="dm_hadr_auto_page_repair" name="dm_hadr_auto_page_repair" tableType="VIEW" xmi:id="_ASYByTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfSDdPEe6Cf6w15FrSLA" label="dm_hadr_automatic_seeding" name="dm_hadr_automatic_seeding" tableType="VIEW" xmi:id="_ASYByjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkftTdPEe6Cf6w15FrSLA" label="dm_hadr_availability_group_states" name="dm_hadr_availability_group_states" tableType="VIEW" xmi:id="_ASYByzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltfjdPEe6Cf6w15FrSLA" label="dm_hadr_availability_replica_cluster_nodes" name="dm_hadr_availability_replica_cluster_nodes" tableType="VIEW" xmi:id="_ASYBzDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfCjdPEe6Cf6w15FrSLA" label="dm_hadr_availability_replica_cluster_states" name="dm_hadr_availability_replica_cluster_states" tableType="VIEW" xmi:id="_ASYBzTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfQDdPEe6Cf6w15FrSLA" label="dm_hadr_availability_replica_states" name="dm_hadr_availability_replica_states" tableType="VIEW" xmi:id="_ASYBzjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltZDdPEe6Cf6w15FrSLA" label="dm_hadr_cluster" name="dm_hadr_cluster" tableType="VIEW" xmi:id="_ASYBzzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmejdPEe6Cf6w15FrSLA" label="dm_hadr_cluster_members" name="dm_hadr_cluster_members" tableType="VIEW" xmi:id="_ASYB0DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfCzdPEe6Cf6w15FrSLA" label="dm_hadr_cluster_networks" name="dm_hadr_cluster_networks" tableType="VIEW" xmi:id="_ASYB0TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltODdPEe6Cf6w15FrSLA" label="dm_hadr_database_replica_cluster_states" name="dm_hadr_database_replica_cluster_states" tableType="VIEW" xmi:id="_ASYB0jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmfTdPEe6Cf6w15FrSLA" label="dm_hadr_database_replica_states" name="dm_hadr_database_replica_states" tableType="VIEW" xmi:id="_ASYB0zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hplthTdPEe6Cf6w15FrSLA" label="dm_hadr_db_threads" name="dm_hadr_db_threads" tableType="VIEW" xmi:id="_ASYB1DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfczdPEe6Cf6w15FrSLA" label="dm_hadr_instance_node_map" name="dm_hadr_instance_node_map" tableType="VIEW" xmi:id="_ASYB1TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltVTdPEe6Cf6w15FrSLA" label="dm_hadr_name_id_map" name="dm_hadr_name_id_map" tableType="VIEW" xmi:id="_ASYB1jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltcTdPEe6Cf6w15FrSLA" label="dm_hadr_physical_seeding_stats" name="dm_hadr_physical_seeding_stats" tableType="VIEW" xmi:id="_ASYB1zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltLTdPEe6Cf6w15FrSLA" label="dm_hpc_device_stats" name="dm_hpc_device_stats" tableType="VIEW" xmi:id="_ASYB2DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgEjdPEe6Cf6w15FrSLA" label="dm_hpc_thread_proxy_stats" name="dm_hpc_thread_proxy_stats" tableType="VIEW" xmi:id="_ASYB2TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmezdPEe6Cf6w15FrSLA" label="dm_io_backup_tapes" name="dm_io_backup_tapes" tableType="VIEW" xmi:id="_ASYB2jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgHzdPEe6Cf6w15FrSLA" label="dm_io_cluster_shared_drives" name="dm_io_cluster_shared_drives" tableType="VIEW" xmi:id="_ASYB2zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgFzdPEe6Cf6w15FrSLA" label="dm_io_cluster_valid_path_names" name="dm_io_cluster_valid_path_names" tableType="VIEW" xmi:id="_ASYB3DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfmDdPEe6Cf6w15FrSLA" label="dm_io_pending_io_requests" name="dm_io_pending_io_requests" tableType="VIEW" xmi:id="_ASYB3TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf8jdPEe6Cf6w15FrSLA" label="dm_logpool_hashentries" name="dm_logpool_hashentries" tableType="VIEW" xmi:id="_ASYB3jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmizdPEe6Cf6w15FrSLA" label="dm_logpool_stats" name="dm_logpool_stats" tableType="VIEW" xmi:id="_ASYB3zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltVjdPEe6Cf6w15FrSLA" label="dm_os_buffer_descriptors" name="dm_os_buffer_descriptors" tableType="VIEW" xmi:id="_ASYB4DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmgjdPEe6Cf6w15FrSLA" label="dm_os_buffer_pool_extension_configuration" name="dm_os_buffer_pool_extension_configuration" tableType="VIEW" xmi:id="_ASYB4TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfvzdPEe6Cf6w15FrSLA" label="dm_os_child_instances" name="dm_os_child_instances" tableType="VIEW" xmi:id="_ASYB4jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltqTdPEe6Cf6w15FrSLA" label="dm_os_cluster_nodes" name="dm_os_cluster_nodes" tableType="VIEW" xmi:id="_ASYB4zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfZjdPEe6Cf6w15FrSLA" label="dm_os_cluster_properties" name="dm_os_cluster_properties" tableType="VIEW" xmi:id="_ASYB5DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfBjdPEe6Cf6w15FrSLA" label="dm_os_dispatcher_pools" name="dm_os_dispatcher_pools" tableType="VIEW" xmi:id="_ASYB5TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgKDdPEe6Cf6w15FrSLA" label="dm_os_dispatchers" name="dm_os_dispatchers" tableType="VIEW" xmi:id="_ASYB5jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfgDdPEe6Cf6w15FrSLA" label="dm_os_enumerate_fixed_drives" name="dm_os_enumerate_fixed_drives" tableType="VIEW" xmi:id="_ASYB5zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf-zdPEe6Cf6w15FrSLA" label="dm_os_host_info" name="dm_os_host_info" tableType="VIEW" xmi:id="_ASYB6DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfRjdPEe6Cf6w15FrSLA" label="dm_os_hosts" name="dm_os_hosts" tableType="VIEW" xmi:id="_ASYB6TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltQTdPEe6Cf6w15FrSLA" label="dm_os_job_object" name="dm_os_job_object" tableType="VIEW" xmi:id="_ASYB6jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgIzdPEe6Cf6w15FrSLA" label="dm_os_latch_stats" name="dm_os_latch_stats" tableType="VIEW" xmi:id="_ASYB6zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltUzdPEe6Cf6w15FrSLA" label="dm_os_loaded_modules" name="dm_os_loaded_modules" tableType="VIEW" xmi:id="_ASYB7DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltjzdPEe6Cf6w15FrSLA" label="dm_os_memory_allocations" name="dm_os_memory_allocations" tableType="VIEW" xmi:id="_ASYB7TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltUjdPEe6Cf6w15FrSLA" label="dm_os_memory_broker_clerks" name="dm_os_memory_broker_clerks" tableType="VIEW" xmi:id="_ASYB7jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf6TdPEe6Cf6w15FrSLA" label="dm_os_memory_brokers" name="dm_os_memory_brokers" tableType="VIEW" xmi:id="_ASYB7zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfjDdPEe6Cf6w15FrSLA" label="dm_os_memory_cache_clock_hands" name="dm_os_memory_cache_clock_hands" tableType="VIEW" xmi:id="_ASYB8DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfYjdPEe6Cf6w15FrSLA" label="dm_os_memory_cache_counters" name="dm_os_memory_cache_counters" tableType="VIEW" xmi:id="_ASYB8TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfIjdPEe6Cf6w15FrSLA" label="dm_os_memory_cache_entries" name="dm_os_memory_cache_entries" tableType="VIEW" xmi:id="_ASYB8jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf0TdPEe6Cf6w15FrSLA" label="dm_os_memory_cache_hash_tables" name="dm_os_memory_cache_hash_tables" tableType="VIEW" xmi:id="_ASYB8zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfRTdPEe6Cf6w15FrSLA" label="dm_os_memory_clerks" name="dm_os_memory_clerks" tableType="VIEW" xmi:id="_ASYB9DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfATdPEe6Cf6w15FrSLA" label="dm_os_memory_node_access_stats" name="dm_os_memory_node_access_stats" tableType="VIEW" xmi:id="_ASYB9TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltpTdPEe6Cf6w15FrSLA" label="dm_os_memory_nodes" name="dm_os_memory_nodes" tableType="VIEW" xmi:id="_ASYB9jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgMzdPEe6Cf6w15FrSLA" label="dm_os_memory_objects" name="dm_os_memory_objects" tableType="VIEW" xmi:id="_ASYB9zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltkjdPEe6Cf6w15FrSLA" label="dm_os_memory_pools" name="dm_os_memory_pools" tableType="VIEW" xmi:id="_ASYB-DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfUTdPEe6Cf6w15FrSLA" label="dm_os_nodes" name="dm_os_nodes" tableType="VIEW" xmi:id="_ASYB-TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfQjdPEe6Cf6w15FrSLA" label="dm_os_performance_counters" name="dm_os_performance_counters" tableType="VIEW" xmi:id="_ASYB-jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmfDdPEe6Cf6w15FrSLA" label="dm_os_process_memory" name="dm_os_process_memory" tableType="VIEW" xmi:id="_ASYB-zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfwjdPEe6Cf6w15FrSLA" label="dm_os_ring_buffers" name="dm_os_ring_buffers" tableType="VIEW" xmi:id="_ASYB_DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkffzdPEe6Cf6w15FrSLA" label="dm_os_schedulers" name="dm_os_schedulers" tableType="VIEW" xmi:id="_ASYB_TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfNTdPEe6Cf6w15FrSLA" label="dm_os_server_diagnostics_log_configurations" name="dm_os_server_diagnostics_log_configurations" tableType="VIEW" xmi:id="_ASYB_jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltLzdPEe6Cf6w15FrSLA" label="dm_os_spinlock_stats" name="dm_os_spinlock_stats" tableType="VIEW" xmi:id="_ASYB_zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hplthDdPEe6Cf6w15FrSLA" label="dm_os_stacks" name="dm_os_stacks" tableType="VIEW" xmi:id="_ASYCADXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltjDdPEe6Cf6w15FrSLA" label="dm_os_sublatches" name="dm_os_sublatches" tableType="VIEW" xmi:id="_ASYCATXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltqjdPEe6Cf6w15FrSLA" label="dm_os_sys_info" name="dm_os_sys_info" tableType="VIEW" xmi:id="_ASYCAjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke-zdPEe6Cf6w15FrSLA" label="dm_os_sys_memory" name="dm_os_sys_memory" tableType="VIEW" xmi:id="_ASYCAzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hplttTdPEe6Cf6w15FrSLA" label="dm_os_tasks" name="dm_os_tasks" tableType="VIEW" xmi:id="_ASYCBDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke9jdPEe6Cf6w15FrSLA" label="dm_os_threads" name="dm_os_threads" tableType="VIEW" xmi:id="_ASYCBTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltmzdPEe6Cf6w15FrSLA" label="dm_os_virtual_address_dump" name="dm_os_virtual_address_dump" tableType="VIEW" xmi:id="_ASYCBjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltPTdPEe6Cf6w15FrSLA" label="dm_os_wait_stats" name="dm_os_wait_stats" tableType="VIEW" xmi:id="_ASYCBzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfajdPEe6Cf6w15FrSLA" label="dm_os_waiting_tasks" name="dm_os_waiting_tasks" tableType="VIEW" xmi:id="_ASYCCDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfdzdPEe6Cf6w15FrSLA" label="dm_os_windows_info" name="dm_os_windows_info" tableType="VIEW" xmi:id="_ASYCCTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfLTdPEe6Cf6w15FrSLA" label="dm_os_worker_local_storage" name="dm_os_worker_local_storage" tableType="VIEW" xmi:id="_ASYCCjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfFzdPEe6Cf6w15FrSLA" label="dm_os_workers" name="dm_os_workers" tableType="VIEW" xmi:id="_ASYCCzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfkzdPEe6Cf6w15FrSLA" label="dm_pal_cpu_stats" name="dm_pal_cpu_stats" tableType="VIEW" xmi:id="_ASYCDDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltezdPEe6Cf6w15FrSLA" label="dm_pal_disk_stats" name="dm_pal_disk_stats" tableType="VIEW" xmi:id="_ASYCDTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltGjdPEe6Cf6w15FrSLA" label="dm_pal_net_stats" name="dm_pal_net_stats" tableType="VIEW" xmi:id="_ASYCDjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltNTdPEe6Cf6w15FrSLA" label="dm_pal_processes" name="dm_pal_processes" tableType="VIEW" xmi:id="_ASYCDzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfezdPEe6Cf6w15FrSLA" label="dm_pal_spinlock_stats" name="dm_pal_spinlock_stats" tableType="VIEW" xmi:id="_ASYCEDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf9zdPEe6Cf6w15FrSLA" label="dm_pal_vm_stats" name="dm_pal_vm_stats" tableType="VIEW" xmi:id="_ASYCETXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfZTdPEe6Cf6w15FrSLA" label="dm_pal_wait_stats" name="dm_pal_wait_stats" tableType="VIEW" xmi:id="_ASYCEjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfDDdPEe6Cf6w15FrSLA" label="dm_qn_subscriptions" name="dm_qn_subscriptions" tableType="VIEW" xmi:id="_ASYCEzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfKjdPEe6Cf6w15FrSLA" label="dm_repl_articles" name="dm_repl_articles" tableType="VIEW" xmi:id="_ASYCFDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfwzdPEe6Cf6w15FrSLA" label="dm_repl_schemas" name="dm_repl_schemas" tableType="VIEW" xmi:id="_ASYCFTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltgDdPEe6Cf6w15FrSLA" label="dm_repl_tranhash" name="dm_repl_tranhash" tableType="VIEW" xmi:id="_ASYCFjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf4DdPEe6Cf6w15FrSLA" label="dm_repl_traninfo" name="dm_repl_traninfo" tableType="VIEW" xmi:id="_ASYCFzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfsTdPEe6Cf6w15FrSLA" label="dm_resource_governor_configuration" name="dm_resource_governor_configuration" tableType="VIEW" xmi:id="_ASYCGDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfAzdPEe6Cf6w15FrSLA" label="dm_resource_governor_external_resource_pool_affinity" name="dm_resource_governor_external_resource_pool_affinity" tableType="VIEW" xmi:id="_ASYCGTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltOTdPEe6Cf6w15FrSLA" label="dm_resource_governor_external_resource_pools" name="dm_resource_governor_external_resource_pools" tableType="VIEW" xmi:id="_ASYCGjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfVzdPEe6Cf6w15FrSLA" label="dm_resource_governor_resource_pool_affinity" name="dm_resource_governor_resource_pool_affinity" tableType="VIEW" xmi:id="_ASYCGzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfMjdPEe6Cf6w15FrSLA" label="dm_resource_governor_resource_pool_volumes" name="dm_resource_governor_resource_pool_volumes" tableType="VIEW" xmi:id="_ASYCHDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltaDdPEe6Cf6w15FrSLA" label="dm_resource_governor_resource_pools" name="dm_resource_governor_resource_pools" tableType="VIEW" xmi:id="_ASYCHTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfITdPEe6Cf6w15FrSLA" label="dm_resource_governor_workload_groups" name="dm_resource_governor_workload_groups" tableType="VIEW" xmi:id="_ASYCHjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltnzdPEe6Cf6w15FrSLA" label="dm_server_audit_status" name="dm_server_audit_status" tableType="VIEW" xmi:id="_ASYCHzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltoDdPEe6Cf6w15FrSLA" label="dm_server_memory_dumps" name="dm_server_memory_dumps" tableType="VIEW" xmi:id="_ASYCIDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltkDdPEe6Cf6w15FrSLA" label="dm_server_registry" name="dm_server_registry" tableType="VIEW" xmi:id="_ASYCITXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfVDdPEe6Cf6w15FrSLA" label="dm_server_services" name="dm_server_services" tableType="VIEW" xmi:id="_ASYCIjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltFzdPEe6Cf6w15FrSLA" label="dm_tcp_listener_states" name="dm_tcp_listener_states" tableType="VIEW" xmi:id="_ASYCIzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfYzdPEe6Cf6w15FrSLA" label="dm_tran_aborted_transactions" name="dm_tran_aborted_transactions" tableType="VIEW" xmi:id="_ASYCJDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgDDdPEe6Cf6w15FrSLA" label="dm_tran_active_snapshot_database_transactions" name="dm_tran_active_snapshot_database_transactions" tableType="VIEW" xmi:id="_ASYCJTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfBzdPEe6Cf6w15FrSLA" label="dm_tran_active_transactions" name="dm_tran_active_transactions" tableType="VIEW" xmi:id="_ASYCJjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltHDdPEe6Cf6w15FrSLA" label="dm_tran_commit_table" name="dm_tran_commit_table" tableType="VIEW" xmi:id="_ASYCJzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltRjdPEe6Cf6w15FrSLA" label="dm_tran_current_snapshot" name="dm_tran_current_snapshot" tableType="VIEW" xmi:id="_ASYCKDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgDjdPEe6Cf6w15FrSLA" label="dm_tran_current_transaction" name="dm_tran_current_transaction" tableType="VIEW" xmi:id="_ASYCKTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgBTdPEe6Cf6w15FrSLA" label="dm_tran_database_transactions" name="dm_tran_database_transactions" tableType="VIEW" xmi:id="_ASYCKjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke8zdPEe6Cf6w15FrSLA" label="dm_tran_global_recovery_transactions" name="dm_tran_global_recovery_transactions" tableType="VIEW" xmi:id="_ASYCKzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfvDdPEe6Cf6w15FrSLA" label="dm_tran_global_transactions" name="dm_tran_global_transactions" tableType="VIEW" xmi:id="_ASYCLDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfrDdPEe6Cf6w15FrSLA" label="dm_tran_global_transactions_enlistments" name="dm_tran_global_transactions_enlistments" tableType="VIEW" xmi:id="_ASYCLTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf_DdPEe6Cf6w15FrSLA" label="dm_tran_global_transactions_log" name="dm_tran_global_transactions_log" tableType="VIEW" xmi:id="_ASYCLjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltiDdPEe6Cf6w15FrSLA" label="dm_tran_locks" name="dm_tran_locks" tableType="VIEW" xmi:id="_ASYCLzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfDzdPEe6Cf6w15FrSLA" label="dm_tran_persistent_version_store" name="dm_tran_persistent_version_store" tableType="VIEW" xmi:id="_ASYCMDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke9DdPEe6Cf6w15FrSLA" label="dm_tran_persistent_version_store_stats" name="dm_tran_persistent_version_store_stats" tableType="VIEW" xmi:id="_ASYCMTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltczdPEe6Cf6w15FrSLA" label="dm_tran_session_transactions" name="dm_tran_session_transactions" tableType="VIEW" xmi:id="_ASYCMjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf4jdPEe6Cf6w15FrSLA" label="dm_tran_top_version_generators" name="dm_tran_top_version_generators" tableType="VIEW" xmi:id="_ASYCMzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfvjdPEe6Cf6w15FrSLA" label="dm_tran_transactions_snapshot" name="dm_tran_transactions_snapshot" tableType="VIEW" xmi:id="_ASYCNDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfbzdPEe6Cf6w15FrSLA" label="dm_tran_version_store" name="dm_tran_version_store" tableType="VIEW" xmi:id="_ASYCNTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfuDdPEe6Cf6w15FrSLA" label="dm_tran_version_store_space_usage" name="dm_tran_version_store_space_usage" tableType="VIEW" xmi:id="_ASYCNjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgIDdPEe6Cf6w15FrSLA" label="dm_xe_map_values" name="dm_xe_map_values" tableType="VIEW" xmi:id="_ASYCNzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke8DdPEe6Cf6w15FrSLA" label="dm_xe_object_columns" name="dm_xe_object_columns" tableType="VIEW" xmi:id="_ASYCODXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfgjdPEe6Cf6w15FrSLA" label="dm_xe_objects" name="dm_xe_objects" tableType="VIEW" xmi:id="_ASYCOTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltkTdPEe6Cf6w15FrSLA" label="dm_xe_packages" name="dm_xe_packages" tableType="VIEW" xmi:id="_ASYCOjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfQzdPEe6Cf6w15FrSLA" label="dm_xe_session_event_actions" name="dm_xe_session_event_actions" tableType="VIEW" xmi:id="_ASYCOzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke_TdPEe6Cf6w15FrSLA" label="dm_xe_session_events" name="dm_xe_session_events" tableType="VIEW" xmi:id="_ASYCPDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf4TdPEe6Cf6w15FrSLA" label="dm_xe_session_object_columns" name="dm_xe_session_object_columns" tableType="VIEW" xmi:id="_ASYCPTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfSTdPEe6Cf6w15FrSLA" label="dm_xe_session_targets" name="dm_xe_session_targets" tableType="VIEW" xmi:id="_ASYCPjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfmzdPEe6Cf6w15FrSLA" label="dm_xe_sessions" name="dm_xe_sessions" tableType="VIEW" xmi:id="_ASYCPzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hplthzdPEe6Cf6w15FrSLA" label="dm_xtp_gc_queue_stats" name="dm_xtp_gc_queue_stats" tableType="VIEW" xmi:id="_ASYCQDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfeTdPEe6Cf6w15FrSLA" label="dm_xtp_gc_stats" name="dm_xtp_gc_stats" tableType="VIEW" xmi:id="_ASYCQTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltrTdPEe6Cf6w15FrSLA" label="dm_xtp_system_memory_consumers" name="dm_xtp_system_memory_consumers" tableType="VIEW" xmi:id="_ASYCQjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgKTdPEe6Cf6w15FrSLA" label="dm_xtp_threads" name="dm_xtp_threads" tableType="VIEW" xmi:id="_ASYCQzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfbTdPEe6Cf6w15FrSLA" label="dm_xtp_transaction_recent_rows" name="dm_xtp_transaction_recent_rows" tableType="VIEW" xmi:id="_ASYCRDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltLjdPEe6Cf6w15FrSLA" label="dm_xtp_transaction_stats" name="dm_xtp_transaction_stats" tableType="VIEW" xmi:id="_ASYCRTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltvDdPEe6Cf6w15FrSLA" label="edge_constraint_clauses" name="edge_constraint_clauses" tableType="VIEW" xmi:id="_ASYCRjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke8TdPEe6Cf6w15FrSLA" label="edge_constraints" name="edge_constraints" tableType="VIEW" xmi:id="_ASYCRzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltFTdPEe6Cf6w15FrSLA" label="endpoint_webmethods" name="endpoint_webmethods" tableType="VIEW" xmi:id="_ASYCSDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmczdPEe6Cf6w15FrSLA" label="endpoints" name="endpoints" tableType="VIEW" xmi:id="_ASYCSTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfzzdPEe6Cf6w15FrSLA" label="event_notification_event_types" name="event_notification_event_types" tableType="VIEW" xmi:id="_ASYCSjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgJjdPEe6Cf6w15FrSLA" label="event_notifications" name="event_notifications" tableType="VIEW" xmi:id="_ASYCSzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltKTdPEe6Cf6w15FrSLA" label="events" name="events" tableType="VIEW" xmi:id="_ASYCTDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf0zdPEe6Cf6w15FrSLA" label="extended_procedures" name="extended_procedures" tableType="VIEW" xmi:id="_ASYCTTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfbjdPEe6Cf6w15FrSLA" label="extended_properties" name="extended_properties" tableType="VIEW" xmi:id="_ASYCTjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkffDdPEe6Cf6w15FrSLA" label="external_data_sources" name="external_data_sources" tableType="VIEW" xmi:id="_ASYCTzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke_jdPEe6Cf6w15FrSLA" label="external_file_formats" name="external_file_formats" tableType="VIEW" xmi:id="_ASYCUDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmhjdPEe6Cf6w15FrSLA" label="external_language_files" name="external_language_files" tableType="VIEW" xmi:id="_ASYCUTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgCjdPEe6Cf6w15FrSLA" label="external_languages" name="external_languages" tableType="VIEW" xmi:id="_ASYCUjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgMTdPEe6Cf6w15FrSLA" label="external_libraries" name="external_libraries" tableType="VIEW" xmi:id="_ASYCUzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltRzdPEe6Cf6w15FrSLA" label="external_libraries_installed" name="external_libraries_installed" tableType="VIEW" xmi:id="_ASYCVDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltlTdPEe6Cf6w15FrSLA" label="external_library_files" name="external_library_files" tableType="VIEW" xmi:id="_ASYCVTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfhTdPEe6Cf6w15FrSLA" label="external_library_setup_errors" name="external_library_setup_errors" tableType="VIEW" xmi:id="_ASYCVjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfizdPEe6Cf6w15FrSLA" label="external_table_columns" name="external_table_columns" tableType="VIEW" xmi:id="_ASYCVzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltHjdPEe6Cf6w15FrSLA" label="external_tables" name="external_tables" tableType="VIEW" xmi:id="_ASYCWDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgCzdPEe6Cf6w15FrSLA" label="filegroups" name="filegroups" tableType="VIEW" xmi:id="_ASYCWTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfAjdPEe6Cf6w15FrSLA" label="filetable_system_defined_objects" name="filetable_system_defined_objects" tableType="VIEW" xmi:id="_ASYCWjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltWzdPEe6Cf6w15FrSLA" label="filetables" name="filetables" tableType="VIEW" xmi:id="_ASYCWzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltWTdPEe6Cf6w15FrSLA" label="foreign_key_columns" name="foreign_key_columns" tableType="VIEW" xmi:id="_ASYCXDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfZDdPEe6Cf6w15FrSLA" label="foreign_keys" name="foreign_keys" tableType="VIEW" xmi:id="_ASYCXTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgJDdPEe6Cf6w15FrSLA" label="fulltext_catalogs" name="fulltext_catalogs" tableType="VIEW" xmi:id="_ASYCXjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltUDdPEe6Cf6w15FrSLA" label="fulltext_document_types" name="fulltext_document_types" tableType="VIEW" xmi:id="_ASYCXzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfoDdPEe6Cf6w15FrSLA" label="fulltext_index_catalog_usages" name="fulltext_index_catalog_usages" tableType="VIEW" xmi:id="_ASYCYDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfFTdPEe6Cf6w15FrSLA" label="fulltext_index_columns" name="fulltext_index_columns" tableType="VIEW" xmi:id="_ASYCYTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltTDdPEe6Cf6w15FrSLA" label="fulltext_index_fragments" name="fulltext_index_fragments" tableType="VIEW" xmi:id="_ASYCYjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfWDdPEe6Cf6w15FrSLA" label="fulltext_indexes" name="fulltext_indexes" tableType="VIEW" xmi:id="_ASYCYzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfLzdPEe6Cf6w15FrSLA" label="fulltext_languages" name="fulltext_languages" tableType="VIEW" xmi:id="_ASYCZDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltZTdPEe6Cf6w15FrSLA" label="fulltext_semantic_language_statistics_database" name="fulltext_semantic_language_statistics_database" tableType="VIEW" xmi:id="_ASYCZTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf9jdPEe6Cf6w15FrSLA" label="fulltext_semantic_languages" name="fulltext_semantic_languages" tableType="VIEW" xmi:id="_ASYCZjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfpzdPEe6Cf6w15FrSLA" label="fulltext_stoplists" name="fulltext_stoplists" tableType="VIEW" xmi:id="_ASYCZzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf1zdPEe6Cf6w15FrSLA" label="fulltext_stopwords" name="fulltext_stopwords" tableType="VIEW" xmi:id="_ASYCaDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmiDdPEe6Cf6w15FrSLA" label="fulltext_system_stopwords" name="fulltext_system_stopwords" tableType="VIEW" xmi:id="_ASYCaTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgMjdPEe6Cf6w15FrSLA" label="function_order_columns" name="function_order_columns" tableType="VIEW" xmi:id="_ASYCajXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltbTdPEe6Cf6w15FrSLA" label="hash_indexes" name="hash_indexes" tableType="VIEW" xmi:id="_ASYCazXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltQzdPEe6Cf6w15FrSLA" label="http_endpoints" name="http_endpoints" tableType="VIEW" xmi:id="_ASYCbDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf7jdPEe6Cf6w15FrSLA" label="identity_columns" name="identity_columns" tableType="VIEW" xmi:id="_ASYCbTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgBzdPEe6Cf6w15FrSLA" label="index_columns" name="index_columns" tableType="VIEW" xmi:id="_ASYCbjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltQDdPEe6Cf6w15FrSLA" label="index_resumable_operations" name="index_resumable_operations" tableType="VIEW" xmi:id="_ASYCbzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfXzdPEe6Cf6w15FrSLA" label="indexes" name="indexes" tableType="VIEW" xmi:id="_ASYCcDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgEzdPEe6Cf6w15FrSLA" label="internal_partitions" name="internal_partitions" tableType="VIEW" xmi:id="_ASYCcTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltaTdPEe6Cf6w15FrSLA" label="internal_tables" name="internal_tables" tableType="VIEW" xmi:id="_ASYCcjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmdTdPEe6Cf6w15FrSLA" label="key_constraints" name="key_constraints" tableType="VIEW" xmi:id="_ASYCczXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfLDdPEe6Cf6w15FrSLA" label="key_encryptions" name="key_encryptions" tableType="VIEW" xmi:id="_ASYCdDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfhzdPEe6Cf6w15FrSLA" label="linked_logins" name="linked_logins" tableType="VIEW" xmi:id="_ASYCdTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmhzdPEe6Cf6w15FrSLA" label="login_token" name="login_token" tableType="VIEW" xmi:id="_ASYCdjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfhDdPEe6Cf6w15FrSLA" label="masked_columns" name="masked_columns" tableType="VIEW" xmi:id="_ASYCdzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltejdPEe6Cf6w15FrSLA" label="master_files" name="master_files" tableType="VIEW" xmi:id="_ASYCeDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgJzdPEe6Cf6w15FrSLA" label="master_key_passwords" name="master_key_passwords" tableType="VIEW" xmi:id="_ASYCeTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfGzdPEe6Cf6w15FrSLA" label="memory_optimized_tables_internal_attributes" name="memory_optimized_tables_internal_attributes" tableType="VIEW" xmi:id="_ASYCejXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfaDdPEe6Cf6w15FrSLA" label="message_type_xml_schema_collection_usages" name="message_type_xml_schema_collection_usages" tableType="VIEW" xmi:id="_ASYCezXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltOjdPEe6Cf6w15FrSLA" label="messages" name="messages" tableType="VIEW" xmi:id="_ASYCfDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltijdPEe6Cf6w15FrSLA" label="module_assembly_usages" name="module_assembly_usages" tableType="VIEW" xmi:id="_ASYCfTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfrjdPEe6Cf6w15FrSLA" label="numbered_procedure_parameters" name="numbered_procedure_parameters" tableType="VIEW" xmi:id="_ASYCfjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfYTdPEe6Cf6w15FrSLA" label="numbered_procedures" name="numbered_procedures" tableType="VIEW" xmi:id="_ASYCfzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfOjdPEe6Cf6w15FrSLA" label="objects" name="objects" tableType="VIEW" xmi:id="_ASYCgDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltMDdPEe6Cf6w15FrSLA" label="openkeys" name="openkeys" tableType="VIEW" xmi:id="_ASYCgTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfmTdPEe6Cf6w15FrSLA" label="parameter_type_usages" name="parameter_type_usages" tableType="VIEW" xmi:id="_ASYCgjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfyDdPEe6Cf6w15FrSLA" label="parameter_xml_schema_collection_usages" name="parameter_xml_schema_collection_usages" tableType="VIEW" xmi:id="_ASYCgzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf4zdPEe6Cf6w15FrSLA" label="parameters" name="parameters" tableType="VIEW" xmi:id="_ASYChDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf1jdPEe6Cf6w15FrSLA" label="partition_functions" name="partition_functions" tableType="VIEW" xmi:id="_ASYChTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfiDdPEe6Cf6w15FrSLA" label="partition_parameters" name="partition_parameters" tableType="VIEW" xmi:id="_ASYChjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgGTdPEe6Cf6w15FrSLA" label="partition_range_values" name="partition_range_values" tableType="VIEW" xmi:id="_ASYChzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpke-TdPEe6Cf6w15FrSLA" label="partition_schemes" name="partition_schemes" tableType="VIEW" xmi:id="_ASYCiDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltKjdPEe6Cf6w15FrSLA" label="partitions" name="partitions" tableType="VIEW" xmi:id="_ASYCiTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltsjdPEe6Cf6w15FrSLA" label="periods" name="periods" tableType="VIEW" xmi:id="_ASYCijXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgFTdPEe6Cf6w15FrSLA" label="plan_guides" name="plan_guides" tableType="VIEW" xmi:id="_ASYCizXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltJjdPEe6Cf6w15FrSLA" label="procedures" name="procedures" tableType="VIEW" xmi:id="_ASYCjDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hplteDdPEe6Cf6w15FrSLA" label="query_context_settings" name="query_context_settings" tableType="VIEW" xmi:id="_ASYCjTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfjzdPEe6Cf6w15FrSLA" label="query_store_plan" name="query_store_plan" tableType="VIEW" xmi:id="_ASYCjjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfzjdPEe6Cf6w15FrSLA" label="query_store_query" name="query_store_query" tableType="VIEW" xmi:id="_ASYCjzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf_TdPEe6Cf6w15FrSLA" label="query_store_query_text" name="query_store_query_text" tableType="VIEW" xmi:id="_ASYCkDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltpjdPEe6Cf6w15FrSLA" label="query_store_runtime_stats" name="query_store_runtime_stats" tableType="VIEW" xmi:id="_ASYCkTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgNTdPEe6Cf6w15FrSLA" label="query_store_runtime_stats_interval" name="query_store_runtime_stats_interval" tableType="VIEW" xmi:id="_ASYCkjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltsTdPEe6Cf6w15FrSLA" label="query_store_wait_stats" name="query_store_wait_stats" tableType="VIEW" xmi:id="_ASYCkzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgAzdPEe6Cf6w15FrSLA" label="registered_search_properties" name="registered_search_properties" tableType="VIEW" xmi:id="_ASYClDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgLTdPEe6Cf6w15FrSLA" label="registered_search_property_lists" name="registered_search_property_lists" tableType="VIEW" xmi:id="_ASYClTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltlzdPEe6Cf6w15FrSLA" label="remote_data_archive_databases" name="remote_data_archive_databases" tableType="VIEW" xmi:id="_ASYCljXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltoTdPEe6Cf6w15FrSLA" label="remote_data_archive_tables" name="remote_data_archive_tables" tableType="VIEW" xmi:id="_ASYClzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfADdPEe6Cf6w15FrSLA" label="remote_logins" name="remote_logins" tableType="VIEW" xmi:id="_ASYCmDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltPDdPEe6Cf6w15FrSLA" label="remote_service_bindings" name="remote_service_bindings" tableType="VIEW" xmi:id="_ASYCmTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmjDdPEe6Cf6w15FrSLA" label="resource_governor_configuration" name="resource_governor_configuration" tableType="VIEW" xmi:id="_ASYCmjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfIzdPEe6Cf6w15FrSLA" label="resource_governor_external_resource_pool_affinity" name="resource_governor_external_resource_pool_affinity" tableType="VIEW" xmi:id="_ASYCmzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf3TdPEe6Cf6w15FrSLA" label="resource_governor_external_resource_pools" name="resource_governor_external_resource_pools" tableType="VIEW" xmi:id="_ASYCnDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfNjdPEe6Cf6w15FrSLA" label="resource_governor_resource_pool_affinity" name="resource_governor_resource_pool_affinity" tableType="VIEW" xmi:id="_ASYCnTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfrzdPEe6Cf6w15FrSLA" label="resource_governor_resource_pools" name="resource_governor_resource_pools" tableType="VIEW" xmi:id="_ASYCnjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltfTdPEe6Cf6w15FrSLA" label="resource_governor_workload_groups" name="resource_governor_workload_groups" tableType="VIEW" xmi:id="_ASYCnzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkffTdPEe6Cf6w15FrSLA" label="routes" name="routes" tableType="VIEW" xmi:id="_ASYCoDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf2TdPEe6Cf6w15FrSLA" label="schemas" name="schemas" tableType="VIEW" xmi:id="_ASYCoTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfLjdPEe6Cf6w15FrSLA" label="securable_classes" name="securable_classes" tableType="VIEW" xmi:id="_ASYCojXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltizdPEe6Cf6w15FrSLA" label="security_policies" name="security_policies" tableType="VIEW" xmi:id="_ASYCozXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfdTdPEe6Cf6w15FrSLA" label="security_predicates" name="security_predicates" tableType="VIEW" xmi:id="_ASYCpDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltbjdPEe6Cf6w15FrSLA" label="selective_xml_index_namespaces" name="selective_xml_index_namespaces" tableType="VIEW" xmi:id="_ASYCpTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltkzdPEe6Cf6w15FrSLA" label="selective_xml_index_paths" name="selective_xml_index_paths" tableType="VIEW" xmi:id="_ASYCpjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfsjdPEe6Cf6w15FrSLA" label="sensitivity_classifications" name="sensitivity_classifications" tableType="VIEW" xmi:id="_ASYCpzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfEjdPEe6Cf6w15FrSLA" label="sequences" name="sequences" tableType="VIEW" xmi:id="_ASYCqDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hplttDdPEe6Cf6w15FrSLA" label="server_assembly_modules" name="server_assembly_modules" tableType="VIEW" xmi:id="_ASYCqTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgNjdPEe6Cf6w15FrSLA" label="server_audit_specification_details" name="server_audit_specification_details" tableType="VIEW" xmi:id="_ASYCqjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltgzdPEe6Cf6w15FrSLA" label="server_audit_specifications" name="server_audit_specifications" tableType="VIEW" xmi:id="_ASYCqzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltGzdPEe6Cf6w15FrSLA" label="server_audits" name="server_audits" tableType="VIEW" xmi:id="_ASYCrDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltqDdPEe6Cf6w15FrSLA" label="server_event_notifications" name="server_event_notifications" tableType="VIEW" xmi:id="_ASYCrTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgGzdPEe6Cf6w15FrSLA" label="server_event_session_actions" name="server_event_session_actions" tableType="VIEW" xmi:id="_ASYCrjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmfjdPEe6Cf6w15FrSLA" label="server_event_session_events" name="server_event_session_events" tableType="VIEW" xmi:id="_ASYCrzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf8zdPEe6Cf6w15FrSLA" label="server_event_session_fields" name="server_event_session_fields" tableType="VIEW" xmi:id="_ASYCsDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltvTdPEe6Cf6w15FrSLA" label="server_event_session_targets" name="server_event_session_targets" tableType="VIEW" xmi:id="_ASYCsTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf0DdPEe6Cf6w15FrSLA" label="server_event_sessions" name="server_event_sessions" tableType="VIEW" xmi:id="_ASYCsjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfOTdPEe6Cf6w15FrSLA" label="server_events" name="server_events" tableType="VIEW" xmi:id="_ASYCszXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltiTdPEe6Cf6w15FrSLA" label="server_file_audits" name="server_file_audits" tableType="VIEW" xmi:id="_ASYCtDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfSzdPEe6Cf6w15FrSLA" label="server_memory_optimized_hybrid_buffer_pool_configuration" name="server_memory_optimized_hybrid_buffer_pool_configuration" tableType="VIEW" xmi:id="_ASYCtTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfYDdPEe6Cf6w15FrSLA" label="server_permissions" name="server_permissions" tableType="VIEW" xmi:id="_ASYCtjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf7TdPEe6Cf6w15FrSLA" label="server_principal_credentials" name="server_principal_credentials" tableType="VIEW" xmi:id="_ASYCtzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltjTdPEe6Cf6w15FrSLA" label="server_principals" name="server_principals" tableType="VIEW" xmi:id="_ASYCuDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltWDdPEe6Cf6w15FrSLA" label="server_role_members" name="server_role_members" tableType="VIEW" xmi:id="_ASYCuTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmgTdPEe6Cf6w15FrSLA" label="server_sql_modules" name="server_sql_modules" tableType="VIEW" xmi:id="_ASYCujXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfOzdPEe6Cf6w15FrSLA" label="server_trigger_events" name="server_trigger_events" tableType="VIEW" xmi:id="_ASYCuzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltVzdPEe6Cf6w15FrSLA" label="server_triggers" name="server_triggers" tableType="VIEW" xmi:id="_ASYCvDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltVDdPEe6Cf6w15FrSLA" label="servers" name="servers" tableType="VIEW" xmi:id="_ASYCvTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfeDdPEe6Cf6w15FrSLA" label="service_broker_endpoints" name="service_broker_endpoints" tableType="VIEW" xmi:id="_ASYCvjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltvzdPEe6Cf6w15FrSLA" label="service_contract_message_usages" name="service_contract_message_usages" tableType="VIEW" xmi:id="_ASYCvzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfEDdPEe6Cf6w15FrSLA" label="service_contract_usages" name="service_contract_usages" tableType="VIEW" xmi:id="_ASYCwDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfVjdPEe6Cf6w15FrSLA" label="service_contracts" name="service_contracts" tableType="VIEW" xmi:id="_ASYCwTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfqDdPEe6Cf6w15FrSLA" label="service_message_types" name="service_message_types" tableType="VIEW" xmi:id="_ASYCwjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgCDdPEe6Cf6w15FrSLA" label="service_queue_usages" name="service_queue_usages" tableType="VIEW" xmi:id="_ASYCwzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltrDdPEe6Cf6w15FrSLA" label="service_queues" name="service_queues" tableType="VIEW" xmi:id="_ASYCxDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfmjdPEe6Cf6w15FrSLA" label="services" name="services" tableType="VIEW" xmi:id="_ASYCxTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltLDdPEe6Cf6w15FrSLA" label="soap_endpoints" name="soap_endpoints" tableType="VIEW" xmi:id="_ASYCxjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgBDdPEe6Cf6w15FrSLA" label="spatial_index_tessellations" name="spatial_index_tessellations" tableType="VIEW" xmi:id="_ASYCxzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltXzdPEe6Cf6w15FrSLA" label="spatial_indexes" name="spatial_indexes" tableType="VIEW" xmi:id="_ASYCyDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfUjdPEe6Cf6w15FrSLA" label="spatial_reference_systems" name="spatial_reference_systems" tableType="VIEW" xmi:id="_ASYCyTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltpDdPEe6Cf6w15FrSLA" label="sql_dependencies" name="sql_dependencies" tableType="VIEW" xmi:id="_ASYCyjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltbzdPEe6Cf6w15FrSLA" label="sql_expression_dependencies" name="sql_expression_dependencies" tableType="VIEW" xmi:id="_ASYCyzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkffjdPEe6Cf6w15FrSLA" label="sql_logins" name="sql_logins" tableType="VIEW" xmi:id="_ASYCzDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgEDdPEe6Cf6w15FrSLA" label="sql_modules" name="sql_modules" tableType="VIEW" xmi:id="_ASYCzTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfgzdPEe6Cf6w15FrSLA" label="stats" name="stats" tableType="VIEW" xmi:id="_ASYCzjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfazdPEe6Cf6w15FrSLA" label="stats_columns" name="stats_columns" tableType="VIEW" xmi:id="_ASYCzzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf-DdPEe6Cf6w15FrSLA" label="symmetric_keys" name="symmetric_keys" tableType="VIEW" xmi:id="_ASYC0DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfHDdPEe6Cf6w15FrSLA" label="synonyms" name="synonyms" tableType="VIEW" xmi:id="_ASYC0TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltajdPEe6Cf6w15FrSLA" label="sysaltfiles" name="sysaltfiles" tableType="VIEW" xmi:id="_ASYC0jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgLDdPEe6Cf6w15FrSLA" label="syscacheobjects" name="syscacheobjects" tableType="VIEW" xmi:id="_ASYC0zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf8DdPEe6Cf6w15FrSLA" label="syscharsets" name="syscharsets" tableType="VIEW" xmi:id="_ASYC1DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfsDdPEe6Cf6w15FrSLA" label="syscolumns" name="syscolumns" tableType="VIEW" xmi:id="_ASYC1TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfKDdPEe6Cf6w15FrSLA" label="syscomments" name="syscomments" tableType="VIEW" xmi:id="_ASYC1jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltwTdPEe6Cf6w15FrSLA" label="sysconfigures" name="sysconfigures" tableType="VIEW" xmi:id="_ASYC1zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgBjdPEe6Cf6w15FrSLA" label="sysconstraints" name="sysconstraints" tableType="VIEW" xmi:id="_ASYC2DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfujdPEe6Cf6w15FrSLA" label="syscscontainers" name="syscscontainers" tableType="VIEW" xmi:id="_ASYC2TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfTTdPEe6Cf6w15FrSLA" label="syscurconfigs" name="syscurconfigs" tableType="VIEW" xmi:id="_ASYC2jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfhjdPEe6Cf6w15FrSLA" label="syscursorcolumns" name="syscursorcolumns" tableType="VIEW" xmi:id="_ASYC2zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfyTdPEe6Cf6w15FrSLA" label="syscursorrefs" name="syscursorrefs" tableType="VIEW" xmi:id="_ASYC3DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfWTdPEe6Cf6w15FrSLA" label="syscursors" name="syscursors" tableType="VIEW" xmi:id="_ASYC3TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltdjdPEe6Cf6w15FrSLA" label="syscursortables" name="syscursortables" tableType="VIEW" xmi:id="_ASYC3jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfjTdPEe6Cf6w15FrSLA" label="sysdatabases" name="sysdatabases" tableType="VIEW" xmi:id="_ASYC3zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltmTdPEe6Cf6w15FrSLA" label="sysdepends" name="sysdepends" tableType="VIEW" xmi:id="_ASYC4DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfXTdPEe6Cf6w15FrSLA" label="sysdevices" name="sysdevices" tableType="VIEW" xmi:id="_ASYC4TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltqzdPEe6Cf6w15FrSLA" label="sysfilegroups" name="sysfilegroups" tableType="VIEW" xmi:id="_ASYC4jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltojdPEe6Cf6w15FrSLA" label="sysfiles" name="sysfiles" tableType="VIEW" xmi:id="_ASYC4zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfZzdPEe6Cf6w15FrSLA" label="sysforeignkeys" name="sysforeignkeys" tableType="VIEW" xmi:id="_ASYC5DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmcDdPEe6Cf6w15FrSLA" label="sysfulltextcatalogs" name="sysfulltextcatalogs" tableType="VIEW" xmi:id="_ASYC5TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkftjdPEe6Cf6w15FrSLA" label="sysindexes" name="sysindexes" tableType="VIEW" xmi:id="_ASYC5jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltMjdPEe6Cf6w15FrSLA" label="sysindexkeys" name="sysindexkeys" tableType="VIEW" xmi:id="_ASYC5zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfnDdPEe6Cf6w15FrSLA" label="syslanguages" name="syslanguages" tableType="VIEW" xmi:id="_ASYC6DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltfDdPEe6Cf6w15FrSLA" label="syslockinfo" name="syslockinfo" tableType="VIEW" xmi:id="_ASYC6TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf3zdPEe6Cf6w15FrSLA" label="syslogins" name="syslogins" tableType="VIEW" xmi:id="_ASYC6jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf7zdPEe6Cf6w15FrSLA" label="sysmembers" name="sysmembers" tableType="VIEW" xmi:id="_ASYC6zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfkDdPEe6Cf6w15FrSLA" label="sysmessages" name="sysmessages" tableType="VIEW" xmi:id="_ASYC7DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltEDdPEe6Cf6w15FrSLA" label="sysobjects" name="sysobjects" tableType="VIEW" xmi:id="_ASYC7TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf1DdPEe6Cf6w15FrSLA" label="sysoledbusers" name="sysoledbusers" tableType="VIEW" xmi:id="_ASYC7jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgLjdPEe6Cf6w15FrSLA" label="sysopentapes" name="sysopentapes" tableType="VIEW" xmi:id="_ASYC7zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltuzdPEe6Cf6w15FrSLA" label="sysperfinfo" name="sysperfinfo" tableType="VIEW" xmi:id="_ASYC8DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltgjdPEe6Cf6w15FrSLA" label="syspermissions" name="syspermissions" tableType="VIEW" xmi:id="_ASYC8TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltJTdPEe6Cf6w15FrSLA" label="sysprocesses" name="sysprocesses" tableType="VIEW" xmi:id="_ASYC8jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfyjdPEe6Cf6w15FrSLA" label="sysprotects" name="sysprotects" tableType="VIEW" xmi:id="_ASYC8zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltnTdPEe6Cf6w15FrSLA" label="sysreferences" name="sysreferences" tableType="VIEW" xmi:id="_ASYC9DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltSzdPEe6Cf6w15FrSLA" label="sysremotelogins" name="sysremotelogins" tableType="VIEW" xmi:id="_ASYC9TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpfmhTdPEe6Cf6w15FrSLA" label="sysservers" name="sysservers" tableType="VIEW" xmi:id="_ASYC9jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkflDdPEe6Cf6w15FrSLA" label="system_columns" name="system_columns" tableType="VIEW" xmi:id="_ASYC9zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfTDdPEe6Cf6w15FrSLA" label="system_components_surface_area_configuration" name="system_components_surface_area_configuration" tableType="VIEW" xmi:id="_ASYC-DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfijdPEe6Cf6w15FrSLA" label="system_internals_allocation_units" name="system_internals_allocation_units" tableType="VIEW" xmi:id="_ASYC-TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltTTdPEe6Cf6w15FrSLA" label="system_internals_partition_columns" name="system_internals_partition_columns" tableType="VIEW" xmi:id="_ASYC-jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltHTdPEe6Cf6w15FrSLA" label="system_internals_partitions" name="system_internals_partitions" tableType="VIEW" xmi:id="_ASYC-zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfkjdPEe6Cf6w15FrSLA" label="system_objects" name="system_objects" tableType="VIEW" xmi:id="_ASYC_DXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfozdPEe6Cf6w15FrSLA" label="system_parameters" name="system_parameters" tableType="VIEW" xmi:id="_ASYC_TXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltYTdPEe6Cf6w15FrSLA" label="system_sql_modules" name="system_sql_modules" tableType="VIEW" xmi:id="_ASYC_jXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hplttzdPEe6Cf6w15FrSLA" label="system_views" name="system_views" tableType="VIEW" xmi:id="_ASYC_zXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfyzdPEe6Cf6w15FrSLA" label="systypes" name="systypes" tableType="VIEW" xmi:id="_ASYDADXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltNjdPEe6Cf6w15FrSLA" label="sysusers" name="sysusers" tableType="VIEW" xmi:id="_ASYDATXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgFDdPEe6Cf6w15FrSLA" label="table_types" name="table_types" tableType="VIEW" xmi:id="_ASYDAjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgHTdPEe6Cf6w15FrSLA" label="tables" name="tables" tableType="VIEW" xmi:id="_ASYDAzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf3jdPEe6Cf6w15FrSLA" label="tcp_endpoints" name="tcp_endpoints" tableType="VIEW" xmi:id="_ASYDBDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltrzdPEe6Cf6w15FrSLA" label="time_zone_info" name="time_zone_info" tableType="VIEW" xmi:id="_ASYDBTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf6zdPEe6Cf6w15FrSLA" label="trace_categories" name="trace_categories" tableType="VIEW" xmi:id="_ASYDBjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfMDdPEe6Cf6w15FrSLA" label="trace_columns" name="trace_columns" tableType="VIEW" xmi:id="_ASYDBzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfojdPEe6Cf6w15FrSLA" label="trace_event_bindings" name="trace_event_bindings" tableType="VIEW" xmi:id="_ASYDCDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltFDdPEe6Cf6w15FrSLA" label="trace_events" name="trace_events" tableType="VIEW" xmi:id="_ASYDCTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfNDdPEe6Cf6w15FrSLA" label="trace_subclass_values" name="trace_subclass_values" tableType="VIEW" xmi:id="_ASYDCjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfTzdPEe6Cf6w15FrSLA" label="traces" name="traces" tableType="VIEW" xmi:id="_ASYDCzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltPjdPEe6Cf6w15FrSLA" label="transmission_queue" name="transmission_queue" tableType="VIEW" xmi:id="_ASYDDDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltOzdPEe6Cf6w15FrSLA" label="trigger_event_types" name="trigger_event_types" tableType="VIEW" xmi:id="_ASYDDTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfFjdPEe6Cf6w15FrSLA" label="trigger_events" name="trigger_events" tableType="VIEW" xmi:id="_ASYDDjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfBTdPEe6Cf6w15FrSLA" label="triggers" name="triggers" tableType="VIEW" xmi:id="_ASYDDzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltNzdPEe6Cf6w15FrSLA" label="trusted_assemblies" name="trusted_assemblies" tableType="VIEW" xmi:id="_ASYDEDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfszdPEe6Cf6w15FrSLA" label="type_assembly_usages" name="type_assembly_usages" tableType="VIEW" xmi:id="_ASYDETXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgKjdPEe6Cf6w15FrSLA" label="types" name="types" tableType="VIEW" xmi:id="_ASYDEjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfuzdPEe6Cf6w15FrSLA" label="user_token" name="user_token" tableType="VIEW" xmi:id="_ASYDEzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfVTdPEe6Cf6w15FrSLA" label="via_endpoints" name="via_endpoints" tableType="VIEW" xmi:id="_ASYDFDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfcTdPEe6Cf6w15FrSLA" label="views" name="views" tableType="VIEW" xmi:id="_ASYDFTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfdjdPEe6Cf6w15FrSLA" label="xml_indexes" name="xml_indexes" tableType="VIEW" xmi:id="_ASYDFjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgLzdPEe6Cf6w15FrSLA" label="xml_schema_attributes" name="xml_schema_attributes" tableType="VIEW" xmi:id="_ASYDFzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfMzdPEe6Cf6w15FrSLA" label="xml_schema_collections" name="xml_schema_collections" tableType="VIEW" xmi:id="_ASYDGDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hplteTdPEe6Cf6w15FrSLA" label="xml_schema_component_placements" name="xml_schema_component_placements" tableType="VIEW" xmi:id="_ASYDGTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkf6jdPEe6Cf6w15FrSLA" label="xml_schema_components" name="xml_schema_components" tableType="VIEW" xmi:id="_ASYDGjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltKzdPEe6Cf6w15FrSLA" label="xml_schema_elements" name="xml_schema_elements" tableType="VIEW" xmi:id="_ASYDGzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfxzdPEe6Cf6w15FrSLA" label="xml_schema_facets" name="xml_schema_facets" tableType="VIEW" xmi:id="_ASYDHDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkgITdPEe6Cf6w15FrSLA" label="xml_schema_model_groups" name="xml_schema_model_groups" tableType="VIEW" xmi:id="_ASYDHTXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkftzdPEe6Cf6w15FrSLA" label="xml_schema_namespaces" name="xml_schema_namespaces" tableType="VIEW" xmi:id="_ASYDHjXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfBDdPEe6Cf6w15FrSLA" label="xml_schema_types" name="xml_schema_types" tableType="VIEW" xmi:id="_ASYDHzXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpkfCTdPEe6Cf6w15FrSLA" label="xml_schema_wildcard_namespaces" name="xml_schema_wildcard_namespaces" tableType="VIEW" xmi:id="_ASYDIDXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_hpltGDdPEe6Cf6w15FrSLA" label="xml_schema_wildcards" name="xml_schema_wildcards" tableType="VIEW" xmi:id="_ASYDITXYEe6QV51SkJ4mBA" xsi:type="relational:TdView"/>
+      <ownedElement id="_AXRIMDXYEe6QV51SkJ4mBA" label="trace_xe_action_map" name="trace_xe_action_map" tableType="TABLE" xmi:id="_AXRIMjXYEe6QV51SkJ4mBA" xsi:type="relational:TdTable"/>
+      <ownedElement id="_AXRIMTXYEe6QV51SkJ4mBA" label="trace_xe_event_map" name="trace_xe_event_map" tableType="TABLE" xmi:id="_AXRIMzXYEe6QV51SkJ4mBA" xsi:type="relational:TdTable">
+        <feature label="trace_event_id" length="5" name="trace_event_id" nullable="false" sourceType="SMALLINT" talendType="id_Short" xmi:id="_2coJQDdyEe6r5YBD3SqUQQ" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_2coJQTdyEe6r5YBD3SqUQQ"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_2coJQjdyEe6r5YBD3SqUQQ" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="5" name="SMALLINT" numericPrecisionRadix="10" xmi:id="_2coJQzdyEe6r5YBD3SqUQQ"/>
+        </feature>
+        <feature label="package_name" length="60" name="package_name" nullable="false" sourceType="NVARCHAR" talendType="id_String" xmi:id="_2coJRDdyEe6r5YBD3SqUQQ" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_2coJRTdyEe6r5YBD3SqUQQ"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_2coJRjdyEe6r5YBD3SqUQQ" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="NVARCHAR" xmi:id="_2coJRzdyEe6r5YBD3SqUQQ"/>
+        </feature>
+        <feature label="xe_event_name" length="60" name="xe_event_name" nullable="false" sourceType="NVARCHAR" talendType="id_String" xmi:id="_2coJSDdyEe6r5YBD3SqUQQ" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="" xmi:id="_2coJSTdyEe6r5YBD3SqUQQ"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_2coJSjdyEe6r5YBD3SqUQQ" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="NVARCHAR" xmi:id="_2coJSzdyEe6r5YBD3SqUQQ"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.objectmodel.core:Dependency kind="Usage" supplier="_4bwOsDXNEe6QV51SkJ4mBA" xmi:id="_bKCudDaZEe6N_N17dUdcrg"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5259bab6-fa5b-4ec3-939f-aa50cc31a094"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HeiQfjcx89qlDQySyEgVduTfkTbjUMzXaNlFw0BNRI+mHYO/KUVPgzuf3r6RVbp974cJWWzbwmoF&#13;
+FEGCv7DIyA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_38ffe795-15cd-4082-9c33-1b907e9050d5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mr8/qv+UTL+bxO6UGuzWr5L6PvwKsfK3Gowdjsezz0xc+ftFLydBLH5ufpADUiQ26r/84xHTN2zw&#13;
+y9S+4nGVHg==</DigestValue></Reference></SignedInfo><SignatureValue>Ouop4a3gzX8qzOrUpK1DK+khINxgEQbGyZZ2iB5b2JsbxpM3oPUtC4qN9NYWNBJc8cjPaiEN+4r8&#13;
+ttr5pqQMh4l05QjhTeekMR88tC4ppj7HYxNsQ3pcVHYU/DMUuzo3GZgLzRK/fNZrTDj+Aou+MsQD&#13;
+MV88bMYanM6cRe33PVJdw42Ngh6BeOC1g2quWSli3ZwdGFE1CDFR1t+bjIb+nPedJ12zGuBj35Yu&#13;
+S9B6g/cAll5xvSTIKXmg5zaadRHkdL4P3FLTUoN2JUYton4BACENBMfFXqdCqyxOkB5+ufWhy9uF&#13;
+gBgYEdmTsZEUBGCDVSDheywsC3MarjpwD8TH9w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_38ffe795-15cd-4082-9c33-1b907e9050d5" Target="#_5259bab6-fa5b-4ec3-939f-aa50cc31a094"><Timestamp>2023-08-10 12:06:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

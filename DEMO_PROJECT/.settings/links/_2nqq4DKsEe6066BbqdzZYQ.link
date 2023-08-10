@@ -1,0 +1,70 @@
+{
+  "itemId" : "_2nqq4DKsEe6066BbqdzZYQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_ww-kUDKsEe6066BbqdzZYQ",
+    "parameterList" : [ {
+      "id" : "_wxI8ZjKsEe6066BbqdzZYQ",
+      "name" : "CSB_AdditionalParams"
+    }, {
+      "id" : "_wxI8YzKsEe6066BbqdzZYQ",
+      "name" : "CSB_Database"
+    }, {
+      "id" : "_wxI8YTKsEe6066BbqdzZYQ",
+      "name" : "CSB_Login"
+    }, {
+      "id" : "_wxI8ZDKsEe6066BbqdzZYQ",
+      "name" : "CSB_Password"
+    }, {
+      "id" : "_wxI8ZTKsEe6066BbqdzZYQ",
+      "name" : "CSB_Port"
+    }, {
+      "id" : "_wxI8YjKsEe6066BbqdzZYQ",
+      "name" : "CSB_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_4HwUoDXNEe6QV51SkJ4mBA",
+    "parameterList" : [ {
+      "id" : "_4IEdtTXNEe6QV51SkJ4mBA",
+      "name" : "CSB_SQLServer_AdditionalParams"
+    }, {
+      "id" : "_4IEdtDXNEe6QV51SkJ4mBA",
+      "name" : "CSB_SQLServer_Database"
+    }, {
+      "id" : "_4IEdszXNEe6QV51SkJ4mBA",
+      "name" : "CSB_SQLServer_Login"
+    }, {
+      "id" : "_4IEdsTXNEe6QV51SkJ4mBA",
+      "name" : "CSB_SQLServer_Password"
+    }, {
+      "id" : "_4IEdtjXNEe6QV51SkJ4mBA",
+      "name" : "CSB_SQLServer_Port"
+    }, {
+      "id" : "_4IEdtzXNEe6QV51SkJ4mBA",
+      "name" : "CSB_SQLServer_Schema"
+    }, {
+      "id" : "_4IEdsjXNEe6QV51SkJ4mBA",
+      "name" : "CSB_SQLServer_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_gUaNkDd1Ee6r5YBD3SqUQQ",
+    "parameterList" : [ {
+      "id" : "_gUjXgTd1Ee6r5YBD3SqUQQ",
+      "name" : "Input_Source_file_Encoding"
+    }, {
+      "id" : "_gUjXgzd1Ee6r5YBD3SqUQQ",
+      "name" : "Input_Source_file_FieldSeparator"
+    }, {
+      "id" : "_gUjXgjd1Ee6r5YBD3SqUQQ",
+      "name" : "Input_Source_file_File"
+    }, {
+      "id" : "_gUjXhDd1Ee6r5YBD3SqUQQ",
+      "name" : "Input_Source_file_Header"
+    }, {
+      "id" : "_gUjXhTd1Ee6r5YBD3SqUQQ",
+      "name" : "Input_Source_file_RowSeparator"
+    } ]
+  } ]
+}
